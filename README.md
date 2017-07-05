@@ -177,11 +177,14 @@ var items = [
 
 <details>
   <summary>Hint: how to start</summary>
+  
   You'll need to write a custom `compareFunction` and pass it into the `sort` method. Follow the structure of the custom `compareFunction` from the documentation.
+  
 </details>
 
 <details>
   <summary>Answer: the compare function</summary>
+  
   ```js
   function compareByPrice(item1, item2){
     if (item1.price < item2.price) {
@@ -194,13 +197,16 @@ var items = [
     return 0;
   }
   ```
+  
 </details>
 
 <details>
   <summary>Answer: calling `sort` with customized function</summary>
+  
   ```js
   items.sort(compareByPrice);
   ```
+  
 </details>
 
 
