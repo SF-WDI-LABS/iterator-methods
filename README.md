@@ -110,7 +110,7 @@ masterMathFunction(2,3,multiplyMe);
 
 3. What is another possible callback function?
 
-Callbacks allow us to queue up the execution of a function until after some other code completes. They allow for asynchronous behavior, even though JavaScript is a single-threaded language. They also let us customize behaviors inside libraries. 
+Callbacks allow us to queue up the execution of a function until after some other code completes. They allow for [asynchronous behavior](https://medium.freecodecamp.org/understanding-asynchronous-javascript-callbacks-through-household-chores-e3de9a1dbd04), even though JavaScript is a single-threaded language. They also let us customize behaviors inside libraries. 
 
 <!--In order to accomplish this, callbacks don't just use the regular call stack. They also involve a structure called a callback queue (or line).  When the callback is ready to be run, it's added to the queue. Callbacks waiting in the queue are run whenever the stack is empty.-->
 
