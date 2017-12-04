@@ -86,21 +86,22 @@ Let's review with an example.
 
 ```js
 
-function masterMathFunction(a, b, callback) {
-    console.log("the inputs are: " + a + " and " + b);
+function answerStudentQuestion(studentName, a, b, callback) {
+    console.log(`To answer your question, ${ studentName }...`)
+    console.log(`The inputs are ${ a } and ${ b }`);
     callback(a,b);
 }
 
 function multiplyMe(n,m) {
-    console.log("Product: " + n*m);
+    console.log(`The product is ${ n*m }`);
 }
 
 function raiseMe(n,m) {
-    console.log("Power: "+ Math.pow(n,m));
+    console.log(`The power is ${ Math.pow(n,m) }`);
 }
 
-masterMathFunction(2,3,raiseMe);
-masterMathFunction(2,3,multiplyMe);
+answerStudentQuestion('Tom', 2, 3, raiseMe);
+answerStudentQuestion('Joanne', 2, 3, multiplyMe);
 
 ```
 
