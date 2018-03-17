@@ -236,7 +236,7 @@ potatoes.forEach(function(element){
 
 We can combine our knowledge of **callbacks** & **iteration** to write better, more *declarative* code.
 
-*We can also illustrate a lot of these with the physical example of a pillbox(array) with items at each index(jelly beans!).*
+*We can also illustrate a lot of these with a physical example.*
 
 Be thinking about how we could extend this metaphor with each method we discuss here.
 
