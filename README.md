@@ -86,22 +86,26 @@ Let's review with an example.
 
 ```js
 
-function answerStudentQuestion(studentName, a, b, callback) {
-    console.log(`To answer your question, ${ studentName }...`)
-    console.log(`The inputs are ${ a } and ${ b }`);
-    callback(a,b);
+function answerStudentQuestion(numOne, numTwo, callback) {
+    console.log(`The inputs are ${ numOne } and ${ numTwo }`);
+    callback(numOne, numTwo);
 }
 
-function multiplyMe(n,m) {
-    console.log(`The product is ${ n*m }`);
+function multiplyNums(a, b) {
+    console.log(`The product is ${ a * b }`);
 }
 
-function raiseMe(n,m) {
-    console.log(`The power is ${ Math.pow(n,m) }`);
+function divideNums (a, b) {
+    console.log(`The quotient is ${ a / b }`);
 }
 
-answerStudentQuestion('Tom', 2, 3, raiseMe);
-answerStudentQuestion('Joanne', 2, 3, multiplyMe);
+function raiseNums(c, d) {
+    console.log(`The power is ${ Math.pow(c, d) }`);
+}
+
+answerStudentQuestion(2, 3, multiplyNums);
+answerStudentQuestion(2, 3, divideNums);
+answerStudentQuestion(2, 3, raiseNums);
 
 ```
 
