@@ -86,7 +86,7 @@ Let's review with an example.
 
 ```js
 
-function answerStudentQuestion(numOne, numTwo, callback) {
+function executeMathOperation(numOne, numTwo, callback) {
     console.log(`The inputs are ${ numOne } and ${ numTwo }`);
     callback(numOne, numTwo);
 }
@@ -103,9 +103,9 @@ function raiseNums(c, d) {
     console.log(`The power is ${ Math.pow(c, d) }`);
 }
 
-answerStudentQuestion(2, 3, multiplyNums);
-answerStudentQuestion(2, 3, divideNums);
-answerStudentQuestion(2, 3, raiseNums);
+executeMathOperation(2, 3, multiplyNums);
+executeMathOperation(2, 3, divideNums);
+executeMathOperation(2, 3, raiseNums);
 
 ```
 
