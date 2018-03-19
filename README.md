@@ -88,19 +88,19 @@ Let's review with an example.
 
 function executeMathOperation(numOne, numTwo, callback) {
     console.log(`The inputs are ${ numOne } and ${ numTwo }`);
-    callback(numOne, numTwo);
+    return callback(numOne, numTwo);
 }
 
 function multiplyNums(a, b) {
-    console.log(`The product is ${ a * b }`);
+    return `The product is ${ a * b }`;
 }
 
 function divideNums (a, b) {
-    console.log(`The quotient is ${ a / b }`);
+    return `The quotient is ${ a / b }`;
 }
 
 function raiseNums(c, d) {
-    console.log(`The power is ${ Math.pow(c, d) }`);
+    return `The power is ${ Math.pow(c, d) }`;
 }
 
 executeMathOperation(2, 3, multiplyNums);
